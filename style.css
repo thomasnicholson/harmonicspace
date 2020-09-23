@@ -1,16 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap');
+
+:root {
+    --width: 900px;
+    --narrow-width: 750px;
+}
 
 * {
     margin: 0;
     padding: 0;
-    }
+}
+
+*:focus {
+    outline: 0 !important;
+}
 
 body {
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    color: black;
+    color: #202020;
     background: linear-gradient(105deg, #567EB9 0%, #B29ACA 50%, #B29ACA 80%, #F9839B 100%);
     background-size: 200% 200%;
     animation: gradient 15s ease infinite;
@@ -23,16 +32,19 @@ body {
 }
 
 .content {
-    margin: 50px 400px;
+    width: var(--width);
+    margin: 50px auto;
 }
 
 .narrow {
-    margin: 50px 550px;
+    width: var(--narrow-width);
+    margin: 50px auto;
 }
 
 h1 {
     /* color: rgba(86,126,185,1); */
     color: white;
+    padding-bottom: 30px;
 }
 
 .button-div{
@@ -49,7 +61,7 @@ button {
     font-weight: 600;
     color: white;
     background-color: transparent;
-    font-size: 2.2rem;
+    font-size: 2.8rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -67,7 +79,7 @@ button em {
 .date{
     color: white;
     font-style: normal;
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 
 button:hover {
@@ -78,6 +90,10 @@ h3 {
     padding-top: 25px;
     font-size: 1.3rem;
     /* color: rgba(86,126,185,1); */
+    color: #cfdae6;
+}
+
+h3 a {
     color: #cfdae6;
 }
 
@@ -118,10 +134,14 @@ h7 {
     padding-top: 5px;
 }
 
+H7 a {
+    color: #202020;
+}
+
 p {
     font-weight: 300;
     padding-bottom: 6px;
-    color: #404040;
+    color: #383838;
 }
 
 .indent {
@@ -130,7 +150,7 @@ p {
 
 a {
     text-decoration: none;
-    color: #404040;
+    color: #383838;
 }
 
 a:hover {
@@ -139,7 +159,7 @@ a:hover {
 
 .head {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:  calc(var(--width) - 325px) 325px;
 }
 
 .map {
@@ -154,7 +174,7 @@ a:hover {
   
 .topnav #myLinks {
     display: none;
-    padding: 0 60px;
+    margin: 0; 
 }
 
 .topnav a {
@@ -169,7 +189,7 @@ a:hover {
 
 .topnav a.icon {
     background: transparent ;
-    display: block;
+    display: inline-block;
     position: absolute;
     right: 0;
     top: 0;
@@ -202,7 +222,6 @@ a:hover {
 
 .active {
     background: transparent;
-    color: yellow;
 }
 
 hr {
@@ -211,13 +230,78 @@ hr {
     border: 3px solid #9893c5;
 }
 
-.centre {
+.tenney {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-  }
+    width: var(--width);
+}
+
+.headshot-img {
+    width: 250px;
+    margin-bottom: -10px;
+    margin-top: 45px;
+}
+
+.right {
+    text-align: right;
+}
+
+.right-img {
+    margin-left: calc(var(--width) - 250px);
+}
+
+.anchor {
+    padding: 10px;
+}
+
+.latticediv{
+    height: 100vh;
+}
+
+.lattice {
+    display: block;
+    width: 100vw;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #383838;
+    font-size: 0.9rem;
+}
 
 
 
+@media (max-width: 925px) {
+    :root {
+        --width: 600px;
+        --narrow-width: 600px;
+    }
 
+    .head {
+        display: block;
+    }
+
+    .map {
+        text-align: left;
+    }
+}
+
+@media (max-width: 600px) {
+    :root {
+        --width: 100%;
+        --narrow-width: 100%;
+    }
+
+    body {
+        padding: 3px;
+    }
+}
