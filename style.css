@@ -36,6 +36,10 @@ body {
     margin: 50px auto;
 }
 
+.tickets {
+    height: 100vh;
+}
+
 .narrow {
     width: var(--narrow-width);
     margin: 50px auto;
@@ -44,7 +48,7 @@ body {
 h1 {
     /* color: rgba(86,126,185,1); */
     color: white;
-    padding-bottom: 30px;
+    padding-bottom: 26px;
 }
 
 .button-div{
@@ -69,11 +73,24 @@ button {
     transform: translate(-50%, -50%);
     padding: 0;
     border: 0 none;
+    width: 495px;
 }
 
 button em {
     color: #D3DDE7;
     font-style: normal;
+}
+
+.line2 {
+    padding-left: 75px;
+}
+
+.line3 {
+    padding-left: 160px;
+}
+
+.line4 {
+    padding-left: 215px;
 }
 
 .date{
@@ -136,6 +153,12 @@ h7 {
 
 H7 a {
     color: #202020;
+}
+
+h8 {
+    color: white;
+    font-size: 1.6rem;
+    padding-top: 50px;
 }
 
 p {
@@ -254,8 +277,12 @@ hr {
     padding: 10px;
 }
 
-.latticediv{
+.latticediv-1{
     height: 100vh;
+}
+
+.latticediv-2{
+    display: none;
 }
 
 .lattice {
@@ -290,7 +317,21 @@ footer {
     }
 
     .map {
-        text-align: left;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .latticediv-1{
+        display: none;
+    }
+    
+    .latticediv-2{
+        display: block;
+    }
+
+    .lattice {
+        height: 100vh;
+        width: auto;
     }
 }
 
@@ -307,4 +348,25 @@ footer {
     .topnav a {
         font-size: 1.1rem;
     } 
+
+    button {
+        font-size: 2rem;
+        width: 350px;
+    }
+        
+    .line2 {
+        padding-left: 50px;
+    }
+    
+    .line3 {
+        padding-left: 110px;
+    }
+    
+    .line4 {
+        padding-left: 145px;
+    }
+
+    .date{
+        font-size: 1.5rem;
+    }
 }
