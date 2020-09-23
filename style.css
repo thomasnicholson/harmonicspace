@@ -184,7 +184,6 @@ a:hover {
     font-size: 1.3rem;
     font-weight: 300;
     display: block;
-
 }   
 
 .topnav a.icon {
@@ -304,4 +303,8 @@ footer {
     body {
         padding: 3px;
     }
+
+    .topnav a {
+        font-size: 1.1rem;
+    } 
 }
