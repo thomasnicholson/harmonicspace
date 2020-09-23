@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+    background-color: #ede7f3;
+}
+
+.home {
+    background: linear-gradient(90deg, rgba(86,126,185,1)0%, rgba(219,145,198,1) 100%);
+    background-size: 200% 200%;
+    animation: gradient 7s ease infinite;
+}
+
+.content {
+    margin: 50px 300px;
+}
+
+h1 {
+    color: rgba(86,126,185,1);
+}
+
+.button-div{
+    background-color: transparent;
+    height: 100vh;
+}
+
+button {
+    color: white;
+    font-family: 'Poppins', sans-serif;;
+    text-align: left;
+    padding-top: 200px;
+    line-height: 1;
+    font-weight: 600;
+    color: white;
+    background-color: transparent;
+    font-size: 2.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 0;
+    border: 0 none;
+}
+
+button em {
+    color: #D3DDE7;
+    font-style: normal;
+}
+
+.date{
+    color: white;
+    font-style: normal;
+    font-size: 1.4rem;
+}
+
+button:hover {
+    color:black;
+}
+
+h3 {
+    padding-top: 25px;
+    font-size: 1.3rem;
+    color: rgba(86,126,185,1);
+}
+
+h4 {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    padding-top: 15px;
+}
+
+h5 {
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.1rem;
+    padding-top: 5px;
+}
+
+h6 {
+    padding-top: 15px;
+    font-size: 1.3rem;
+    color: rgba(86,126,185,1);
+}
+
+h6 a {
+    color: rgba(86,126,185,1);
+}
+
+h6 a:hover {
+    font-weight: 700;
+}
+
+h7 {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    padding-top: 5px;
+}
+
+p {
+    font-weight: 300;
+    padding-bottom: 6px;
+}
+
+.indent {
+    padding-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: line-through;
+    font-weight: 500;
+    color: #9893c5;
+}
+
+.head {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.map {
+    text-align: right;
+}
+
+.topnav {
+    overflow: hidden;
+    background: rgba(86,126,185,1);
+    position: relative;
+}
+  
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 300;
+    display: block;
+}   
+
+.topnav a.icon {
+    background: transparent ;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a:hover {
+    background: linear-gradient(90deg, rgba(219,145,198,1) 0%, rgba(86,126,185,1) 100%);
+    background-size: 400% 400%;
+    color: white;
+    font-weight: 400;
+    animation: gradient 4.5s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.topnav a.icon:hover {
+    background: transparent ;
+    color: rgba(219,145,198,1);
+}
+
+.active {
+    background: rgba(86,126,185,1);
+    color: #cfdae6;
+}
+
+hr {
+    width: 40%;
+    margin: auto;
+    border: 3px solid #9893c5;
+}
+
+.centre {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+
+
+
