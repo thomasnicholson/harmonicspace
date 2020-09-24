@@ -28,13 +28,14 @@ body {
     font-size: 16px;
     line-height: 1.5;
     color: #202020;
-    background: linear-gradient(105deg, #567EB9 0%, #B29ACA 50%, #B29ACA 80%, #F9839B 100%);
+    background: linear-gradient(240deg, #567EB9 0%, #B29ACA 50%, #B29ACA 70%, #F9839B 95%, #e6b394 100%);
     background-size: 200% 200%;
     animation: gradient 15s ease infinite;
 }
 
 .home {
-    background: linear-gradient(105deg, #567EB9 0%, #B29ACA 50%, #B29ACA 80%, #F9839B 100%);
+    background: linear-gradient(105deg, #567EB9 0%, #B29ACA 50%, #B29ACA 70%, #F9839B 95%, #e6b394 100%);
+    /* background: linear-gradient(105deg, #567EB9 0%, #B29ACA 50%, #B29ACA 80%, #F9839B 100%); */
     background-size: 200% 200%;
     animation: gradient 15s ease infinite;
 }
