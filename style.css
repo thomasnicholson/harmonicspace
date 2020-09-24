@@ -20,6 +20,7 @@
 
 *:focus {
     outline: 0 !important;
+    background: transparent;
 }
 
 body {
@@ -444,4 +445,9 @@ footer {
     .topnav a {
         padding: 14px 0px;
     }   
+
+    .topnav a.icon {
+        background: transparent ;
+        color: rgba(219,145,198,1);
+    }
 }
