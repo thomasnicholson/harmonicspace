@@ -204,6 +204,11 @@ p {
     padding-left: 20px;
 }
 
+.dur {
+    font-style: italic;
+    margin-top: -10px;
+}
+
 a {
     text-decoration: none;
     color: #383838;
