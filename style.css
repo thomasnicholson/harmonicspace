@@ -19,8 +19,8 @@
 }
 
 *:focus {
-    outline: 0 !important;
-    background: transparent;
+    outline: none !important;
+    background: none;
 }
 
 body {
@@ -207,6 +207,7 @@ p {
 a {
     text-decoration: none;
     color: #383838;
+    -webkit-tap-highlight-color: transparent;
 }
 
 a:hover {
@@ -413,7 +414,7 @@ footer {
         font-size: 0.85rem;
     }
 
-    h3, h4 {
+    h3, h4, H7 {
         font-size: 1rem;
     }
 
