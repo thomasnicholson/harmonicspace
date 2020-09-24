@@ -335,7 +335,7 @@ figcaption {
 
 .hkf {
     padding-top: 0px;
-    width: 320px;
+    width: 230px;
 }
 
 .quickfigure {
@@ -373,6 +373,9 @@ footer {
     text-align: center;
     color: var(--darkgray);
     font-size: 0.9rem;
+}
+
+.grad {
     background: linear-gradient(180deg,#B29ACA 0%, var(--offwhite) 40%);
     background-size: 100% 100%;
 }
