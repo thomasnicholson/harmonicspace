@@ -331,6 +331,11 @@ figcaption {
     margin-left: calc(var(--width) - 250px);
 }
 
+.hkf {
+    padding-top: 0px;
+    width: 60px;
+}
+
 .quickfigure {
     width: 65%;
     margin-left: auto;
