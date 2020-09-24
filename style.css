@@ -121,6 +121,10 @@ h4 {
     padding-top: 15px;
 }
 
+h4 a {
+    color: #202020;
+}
+
 h5 {
     font-weight: 300;
     font-style: normal;
@@ -180,6 +184,15 @@ a:hover {
     color:#fba69d;
 }
 
+.jump {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 30px;
+}
+
+.jump H3 {
+    padding-top: 0;
+}
 .head {
     display: grid;
     grid-template-columns:  calc(var(--width) - 325px) 325px;
@@ -213,7 +226,7 @@ a:hover {
     background: transparent ;
     display: inline-block;
     position: absolute;
-    right: 0;
+    left: 0;
     top: 0;
 }
 
@@ -246,12 +259,6 @@ a:hover {
     background: transparent;
 }
 
-hr {
-    width: 40%;
-    margin: auto;
-    border: 3px solid #9893c5;
-}
-
 .tenney {
     display: block;
     margin-left: auto;
@@ -259,10 +266,18 @@ hr {
     width: var(--width);
 }
 
+figcaption {
+    margin-top: 40px;
+    font-size: 0.7rem;
+    font-style: italic;
+    color: #383838,
+}
+
 .headshot-img {
     width: 250px;
     margin-bottom: -10px;
-    margin-top: 45px;
+    margin-top: 2px;
+    filter: grayscale(100%);
 }
 
 .right {
@@ -273,8 +288,14 @@ hr {
     margin-left: calc(var(--width) - 250px);
 }
 
+.quickfigure {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .anchor {
-    padding: 10px;
+    padding: 9px;
 }
 
 .latticediv-1{
@@ -332,6 +353,10 @@ footer {
     .lattice {
         height: 100vh;
         width: auto;
+    }
+
+    .quickfigure {
+        width: 100%;
     }
 }
 
