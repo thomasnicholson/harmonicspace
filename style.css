@@ -370,6 +370,10 @@ footer {
         padding: 3px;
     }
 
+    h3 {
+        font-size: 1.1rem;
+    }
+
     .topnav a {
         font-size: 1.1rem;
     } 
