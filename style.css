@@ -252,7 +252,8 @@ a:hover {
 }   
 
 .topnav a.icon {
-    background: transparent;    
+    background: transparent;
+    font-size: 1.7rem;    
     display: inline-block;
     position: absolute;
     right: 0;
