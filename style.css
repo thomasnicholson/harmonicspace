@@ -1,3 +1,5 @@
+/* designed and created by Rebecca Lane and Thomas Nicholson */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap');
 
 @font-face{
@@ -8,9 +10,26 @@
     font-style:normal
 }
 
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 :root {
     --width: 900px;
     --narrow-width: 750px;
+    --offwhite: #cfdae6;
+    --nearblack: #202020;
+    --darkgray: #383838;
+    --link-hover: #fba69d;
+    --hamburger-salmon: rgba(219,145,198,1);
 }
 
 * {
@@ -28,7 +47,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    color: #202020;
+    color: var(--nearblack);
     background: linear-gradient(240deg, #567EB9 0%, #B29ACA 50%, #B29ACA 70%, #F9839B 95%, #e6b394 100%);
     background-size: 200% 200%;
     animation: gradient 15s ease infinite;
@@ -36,7 +55,6 @@ body {
 
 .home {
     background: linear-gradient(105deg, #567EB9 0%, #B29ACA 50%, #B29ACA 70%, #F9839B 95%, #e6b394 100%);
-    /* background: linear-gradient(105deg, #567EB9 0%, #B29ACA 50%, #B29ACA 80%, #F9839B 100%); */
     background-size: 200% 200%;
     animation: gradient 15s ease infinite;
 }
@@ -52,11 +70,11 @@ body {
     font-size:inherit;
     text-rendering:auto;
     -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .hamburger:before {
-    content:"\f0c9"
+    content: "\f0c9";
 }
 
 .tickets {
@@ -69,7 +87,6 @@ body {
 }
 
 h1 {
-    /* color: rgba(86,126,185,1); */
     color: white;
     padding-bottom: 26px;
 }
@@ -116,7 +133,7 @@ button em {
     padding-left: 215px;
 }
 
-.date{
+.date {
     color: white;
     font-style: normal;
     font-size: 2rem;
@@ -130,12 +147,11 @@ h3 {
     padding-top: 25px;
     padding-bottom: 10px;
     font-size: 1.3rem;
-    /* color: rgba(86,126,185,1); */
-    color: #cfdae6;
+    color: var(--offwhite);
 }
 
 h3 a {
-    color: #cfdae6;
+    color: var(--offwhite);
 }
 
 h4 {
@@ -146,7 +162,7 @@ h4 {
 }
 
 h4 a {
-    color: #202020;
+    color: var(--nearblack);
 }
 
 h5 {
@@ -159,13 +175,11 @@ h5 {
 h6 {
     padding-top: 15px;
     font-size: 1.3rem;
-    /* color: rgba(86,126,185,1); */
-    color: #cfdae6;
+    color: var(--offwhite);
 }
 
 h6 a {
-    color: #cfdae6;
-    /* color: rgba(86,126,185,1); */
+    color: var(--offwhite);
 }
 
 h6 a:hover {
@@ -180,7 +194,7 @@ h7 {
 }
 
 H7 a {
-    color: #202020;
+    color: var(--nearblack);
 }
 
 h8 {
@@ -193,7 +207,7 @@ p {
     font-weight: 300;
     padding-top: 4px;
     padding-bottom: 6px;
-    color: #383838;
+    color: var(--darkgray);
 }
 
 .name {
@@ -211,12 +225,12 @@ p {
 
 a {
     text-decoration: none;
-    color: #383838;
+    color: var(--darkgray);
     -webkit-tap-highlight-color: transparent;
 }
 
 a:hover {
-    color:#fba69d;
+    color: var(--link-hover);
 }
 
 .jump {
@@ -238,7 +252,7 @@ a:hover {
 }
 
 .topnav {
-    /* overflow: hidden; */
+    overflow: hidden; 
     background: transparent;
     position: relative;
     top: 0;
@@ -268,7 +282,7 @@ a:hover {
 }
 
 .topnav a:hover {
-    background: linear-gradient(90deg, rgba(219,145,198,1) 0%, rgba(86,126,185,1) 100%);
+    background: linear-gradient(90deg, var(--hamburger-salmon) 0%, rgba(86,126,185,1) 100%);
     background-size: 400% 400%;
     color: white;
     font-weight: 400;
@@ -281,21 +295,9 @@ a:hover {
     cursor: default;
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
 .topnav a.icon:hover {
     background: transparent ;
-    color: rgba(219,145,198,1);
+    color: var(--hamburger-salmon);
 }
 
 .active {
@@ -313,7 +315,7 @@ figcaption {
     margin-top: 40px;
     font-size: 0.7rem;
     font-style: italic;
-    color: #383838,
+    color: var(--darkgray),
 }
 
 .headshot-img {
@@ -369,11 +371,11 @@ footer {
     padding-top: 20px;
     padding-bottom: 10px;
     text-align: center;
-    color: #383838;
+    color: var(--darkgray);
     font-size: 0.9rem;
 }
 
-
+/* tweaks for tablet */
 
 @media (max-width: 925px) {
     :root {
@@ -406,7 +408,14 @@ footer {
     .quickfigure {
         width: 100%;
     }
+
+    .topnav a.icon {
+        background: transparent ;
+        color: var(--hamburger-salmon);
+    }
 }
+
+/* tweaks for mobile */
 
 @media (max-width: 600px) {
     :root {
@@ -456,9 +465,4 @@ footer {
     .topnav a {
         padding: 14px 0px;
     }   
-
-    .topnav a.icon {
-        background: transparent ;
-        color: rgba(219,145,198,1);
-    }
 }
