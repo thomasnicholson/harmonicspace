@@ -8,7 +8,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 
 # check for file in directory with  extension
 
-RewriteCond %{REQUEST_FILENAME}\ -f
+RewriteCond %{REQUEST_FILENAME}\.html -f
 
 # display page with  extension
 
