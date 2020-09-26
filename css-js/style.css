@@ -490,9 +490,9 @@ footer {
     }
 
     .topnav a {
-        margin-right: 20px;
+        padding: 14px 20px;
         font-size: 1.1rem;
-    }
+    }   
 
     button {
         font-size: 2rem;
@@ -513,11 +513,7 @@ footer {
 
     .date{
         font-size: 1.5rem;
-    } 
-
-    .topnav a {
-        padding: 14px 0px;
-    }   
+    }
 
     footer {
         margin: 0 -20px;
