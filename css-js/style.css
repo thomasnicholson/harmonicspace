@@ -163,7 +163,7 @@ h4 {
 }
 
 h4 a {
-    color: var(--nearblack);
+    color: var(--link);
 }
 
 h5 {
