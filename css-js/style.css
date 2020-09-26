@@ -244,7 +244,7 @@ p {
 }
 
 a {
-    text-decoration: underline;
+    text-decoration: none;
     color: var(--link);
     -webkit-tap-highlight-color: transparent;
 }
