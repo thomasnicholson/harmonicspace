@@ -485,7 +485,12 @@ footer {
         font-size: 1rem;
     }
 
+    .topnav {
+        margin: 0 -20px;
+    }
+
     .topnav a {
+        margin-right: 20px;
         font-size: 1.1rem;
     }
 
