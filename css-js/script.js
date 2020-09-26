@@ -1,9 +1,9 @@
 // Hamburger menu functionality
 function hamburger_click() {
-  var x = document.getElementById("myLinks");
+  var menu = document.getElementById("myLinks");
   if (x.style.display === "block") {
-    x.style.display = "none";
+    menu.style.display = "none";
   } else {
-    x.style.display = "block";
+    menu.style.display = "block";
   }
 }
